@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap');
+
+    body {
+        font-family: 'Shantell Sans', sans-serif;
+    }
+
+    #wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 60vh;
+    }
+
+    .link-text {
+        font-size: 40px;
+        text-decoration: none;
+        font-weight: 600;
+        color: rgb(83, 83, 83);
+        position: relative;
+        display: block;
+        padding: 5px 0px;
+    }
+
+    .link-text::after {
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        transform: scale(0);
+        background-color: #f00;
+        bottom: 0;
+        left: 0;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .link-text:hover::after {
+        transform: scale(1);
+    }
+</style>
+
+<body>
+    <div id="wrapper">
+        <a href="" class="link-text">Tran Ngoc Trung</a>
+    </div>
+</body>
+
+</html>
